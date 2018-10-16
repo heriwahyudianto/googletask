@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en" >
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Kalkulator Web</title>
+    <meta name="description" content="google web developer specialist">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#4285f4">
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css"> 
+    <link rel="manifest" href="manifest.json">
+  </head>
+  <body class="m0 p0">
+    <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]--> 
+    <noscript>Please Activate Javascript</noscript>
+    <div class='container'>
+    	<section class="bg500   colorf judul">
+    		<b>Kalkulator Web</b>
+    	</section>
+    	<section class="inputcnt">
+    		<input type="text" id="math" class="input" name="" value="" placeholder="" pattern="[0-9]" autofocus="autofocus" required="required" readonly="readonly">
+    	</section>
+    	<section class="reset    ">
+    		<button class="mkiri bggold" onclick="ce();">CE</button>
+    	</section>
+    	<section class="bagi    ">
+    		<button class="mkanan" onclick="bagi();">&divide;</button>
+    	</section>
+
+    	<section class="tuju    ">
+    		<button class="mkiri bgnavy colorf" onclick="tuju();">7</button>
+    	</section>
+    	<section class="delapan    ">
+    		<button class="bgnavy colorf"  onclick="delapan();">8</button>
+    	</section>
+    	<section class="sembilan    ">
+    		<button class="bgnavy colorf" onclick="sembilan();">9</button>
+    	</section>
+    	<section class="kali    ">
+    		<button class="mkanan" onclick="kali();">x</button>
+    	</section>
+    	
+    	<section class="empat    ">
+    		<button class="mkiri bgnavy colorf" onclick="empat();">4</button>
+    	</section>
+    	<section class="lima    ">
+    		<button class="bgnavy colorf" onclick="lima();">5</button>
+    	</section>
+    	<section class="enam    ">
+    		<button class="bgnavy colorf" onclick="enam();">6</button>
+    	</section>
+    	<section class="plus    ">
+    		<button class="mkanan" onclick="plus();">+</button>
+    	</section>
+    	
+    	<section class="satu    ">
+    		<button class="mkiri bgnavy colorf" onclick="satu();">1</button>
+    	</section>
+    	<section class="dua    ">
+    		<button class="bgnavy colorf" onclick="dua();">2</button>
+    	</section>
+    	<section class="tiga    ">
+    		<button class="bgnavy colorf" onclick="tiga();">3</button>
+    	</section>
+    	<section class="min    ">
+    		<button class="mkanan" onclick="min();">-</button>
+    	</section>
+    	
+    	<section class="nol    ">
+    		<button class="mkiri bgnavy colorf" onclick="nol();">0</button>
+    	</section>
+    	<section class="nolnol    ">
+    		<button class="bgnavy colorf" onclick="nolnol();">00</button>
+    	</section>
+    	<section class="nolnolnol    ">
+    		<button class="bgnavy colorf" onclick="nolnolnol();">000</button>
+    	</section>
+    	<section class="samadengan    ">
+    		<button class="mkanan" onclick="samadengan();">=</button>
+    	</section>
+    	<section class="footer">
+    		Made by heri wahyudianto	
+    	</section>    	
+    </div>
+    <script src="javascript/bundle.js" type="text/javascript" charset="utf-8" async defer></script>
+    <script>
+    if ('serviceWorker' in navigator) {
+        console.log("Will service worker register?");
+        window.addEventListener('load', function() {
+            navigator.serviceWorker.register('../service-worker.js').then(function(registration) {
+              // Registration was successful
+              console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            }, function(err) {
+              // registration failed :(
+              console.log('ServiceWorker registration failed: ', err);
+            });
+        });
+    }
+    </script>
+  </body>
+</html>

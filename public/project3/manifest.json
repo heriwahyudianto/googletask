@@ -1,0 +1,20 @@
+{
+  "short_name": "Kalkulator",
+  "name": "Kalkulator Web",
+  "icons": [
+    {
+      "src":"images/kalkulator-icon192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/icons-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/?utm_source=homescreen",
+  "background_color": "#000",
+  "theme_color": "#536878",
+  "display": "standalone"
+}

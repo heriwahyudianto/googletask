@@ -1,0 +1,317 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html, body, #map {    height: 100%;    width: 100vw; }
+body {padding: 0;    margin: 0;min-height: 100%; font-family: sans-serif; font-size: 1em;}
+button{ min-height: 48px;
+    min-width: 48px;
+    background: none;
+    text-align: center;
+    border: none;}
+a{text-decoration: none; color: #fff;}
+.button{min-height: 48px; min-width: 48px; background: #333; color: #fff; text-align: center;padding: 1em; border-radius: 3px;}
+@media  (min-width: 481px) { 
+  .container { display: grid;
+    height: 100%;
+    grid-gap: 4px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 60% 40%;
+  }
+  .peta {    grid-column: 1/-1; } 
+  .gambar {    background: green;    grid-column: 1/2; } 
+  .review {    background: yellow;    grid-column:2/3; }
+}
+@media (max-width: 480px) {
+  .container { display: grid;
+    height: 100%;
+    grid-gap: 4px;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: 60% 20% 20%;
+  }
+  .peta {    grid-column: 1/2; } 
+  .gambar {    background: green;    grid-column: 1/2; } 
+  .review {    background: yellow;    grid-column:1/2; }
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .container { display: grid;
+    height: 100%;
+    grid-gap: 4px;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: 60% 20% 20%;
+  }
+  .peta {    grid-column: 1/2; } 
+  .gambar {    background: green;    grid-column: 1/2; } 
+  .review {    background: yellow;    grid-column:1/2; }
+}
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+  .container { display: grid;
+    height: 100%;
+    grid-gap: 4px;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: 60% 20% 20%;
+  }
+  .peta {    grid-column: 1/2; } 
+  .gambar {    background: green;    grid-column: 1/2; } 
+  .review {    background: yellow;    grid-column:1/2; }
+}
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+  .container { display: grid;
+    height: 100%;
+    grid-gap: 4px;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: 60% 20% 20%;
+  }
+  .peta {    grid-column: 1/2; } 
+  .gambar {    background: green;    grid-column: 1/2; } 
+  .review {    background: yellow;    grid-column:1/2; }
+}
+/* iPhone 4 ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+  .container { display: grid;
+    height: 100%;
+    grid-gap: 4px;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: 60% 20% 20%;
+  }
+  .peta {    grid-column: 1/2; } 
+  .gambar {    background: green;    grid-column: 1/2; } 
+  .review {    background: yellow;    grid-column:1/2; }
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+  .container { display: grid;
+    height: 100%;
+    grid-gap: 4px;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: 60% 20% 20%;
+  }
+  .peta {    grid-column: 1/2; } 
+  .gambar {    background: green;    grid-column: 1/2; } 
+  .review {    background: yellow;    grid-column:1/2; }
+}
+/* iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+  .container { display: grid;
+    height: 100%;
+    grid-gap: 4px;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: 60% 20% 20%;
+  }
+  .peta {    grid-column: 1/2; } 
+  .gambar {    background: green;    grid-column: 1/2; } 
+  .review {    background: yellow;    grid-column:1/2; }
+}
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+  .container { display: grid;
+    height: 100%;
+    grid-gap: 4px;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: 60% 20% 20%;
+  }
+  .peta {    grid-column: 1/2; } 
+  .gambar {    background: green;    grid-column: 1/2; } 
+  .review {    background: yellow;    grid-column:1/2; }
+}
+/* iPhone 6 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+  .container { display: grid;
+    height: 100%;
+    grid-gap: 4px;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: 60% 20% 20%;
+  }
+  .peta {    grid-column: 1/2; } 
+  .gambar {    background: green;    grid-column: 1/2; } 
+  .review {    background: yellow;    grid-column:1/2; }
+}
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+  .container { display: grid;
+    height: 100%;
+    grid-gap: 4px;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: 60% 20% 20%;
+  }
+  .peta {    grid-column: 1/2; } 
+  .gambar {    background: green;    grid-column: 1/2; } 
+  .review {    background: yellow;    grid-column:1/2; }
+}
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+  .container { display: grid;
+    height: 100%;
+    grid-gap: 4px;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: 60% 20% 20%;
+  }
+  .peta {    grid-column: 1/2; } 
+  .gambar {    background: green;    grid-column: 1/2; } 
+  .review {    background: yellow;    grid-column:1/2; }
+}
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+  .container { display: grid;
+    height: 100%;
+    grid-gap: 4px;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: 60% 20% 20%;
+  }
+  .peta {    grid-column: 1/2; } 
+  .gambar {    background: green;    grid-column: 1/2; } 
+  .review {    background: yellow;    grid-column:1/2; }
+}
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+  .container { display: grid;
+    height: 100%;
+    grid-gap: 4px;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: 60% 20% 20%;
+  }
+  .peta {    grid-column: 1/2; } 
+  .gambar {    background: green;    grid-column: 1/2; } 
+  .review {    background: yellow;    grid-column:1/2; }
+}
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+  .container { display: grid;
+    height: 100%;
+    grid-gap: 4px;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: 60% 20% 20%;
+  }
+  .peta {    grid-column: 1/2; } 
+  .gambar {    background: green;    grid-column: 1/2; } 
+  .review {    background: yellow;    grid-column:1/2; }
+}
+/* Samsung Galaxy S4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+  .container { display: grid;
+    height: 100%;
+    grid-gap: 4px;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: 60% 20% 20%;
+  }
+  .peta {    grid-column: 1/2; } 
+  .gambar {    background: green;    grid-column: 1/2; } 
+  .review {    background: yellow;    grid-column:1/2; }
+}
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+  .container { display: grid;
+    height: 100%;
+    grid-gap: 4px;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: 60% 20% 20%;
+  }
+  .peta {    grid-column: 1/2; } 
+  .gambar {    background: green;    grid-column: 1/2; } 
+  .review {    background: yellow;    grid-column:1/2; }
+}
+/* Samsung Galaxy S5 ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+  .container { display: grid;
+    height: 100%;
+    grid-gap: 4px;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: 60% 20% 20%;
+  }
+  .peta {    grid-column: 1/2; } 
+  .gambar {    background: green;    grid-column: 1/2; } 
+  .review {    background: yellow;    grid-column:1/2; }
+}
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+  .container { display: grid;
+    height: 100%;
+    grid-gap: 4px;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: 60% 20% 20%;
+  }
+  .peta {    grid-column: 1/2; } 
+  .gambar {    background: green;    grid-column: 1/2; } 
+  .review {    background: yellow;    grid-column:1/2; }
+}	
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+	.container { display: grid;
+    height: 100%;
+    grid-gap: 4px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 60% 40%;
+  }
+  .peta {    grid-column: 1/-1; } 
+  .gambar {    background: green;    grid-column: 1/2; } 
+  .review {    background: yellow;    grid-column:2/3; }
+}
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+	.container { display: grid;
+    height: 100%;
+    grid-gap: 4px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 60% 40%;
+  }
+  .peta {    grid-column: 1/-1; } 
+  .gambar {    background: green;    grid-column: 1/2; } 
+  .review {    background: yellow;    grid-column:2/3; }
+}
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+	.container { display: grid;
+    height: 100%;
+    grid-gap: 4px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 60% 40%;
+  }
+  .peta {    grid-column: 1/-1; } 
+  .gambar {    background: green;    grid-column: 1/2; } 
+  .review {    background: yellow;    grid-column:2/3; }
+}
+/**********
+iPad 3
+**********/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+	.container { display: grid;
+    height: 100%;
+    grid-gap: 4px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 60% 40%;
+  }
+  .peta {    grid-column: 1/-1; } 
+  .gambar {    background: green;    grid-column: 1/2; } 
+  .review {    background: yellow;    grid-column:2/3; }
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+	.container { display: grid;
+    height: 100%;
+    grid-gap: 4px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 60% 40%;
+  }
+  .peta {    grid-column: 1/-1; } 
+  .gambar {    background: green;    grid-column: 1/2; } 
+  .review {    background: yellow;    grid-column:2/3; }
+}
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+	.container { display: grid;
+    height: 100%;
+    grid-gap: 4px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 60% 40%;
+  }
+  .peta {    grid-column: 1/-1; } 
+  .gambar {    background: green;    grid-column: 1/2; } 
+  .review {    background: yellow;    grid-column:2/3; }}
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+	.container { display: grid;
+    height: 100%;
+    grid-gap: 4px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 60% 40%;
+  }
+  .peta {    grid-column: 1/-1; } 
+  .gambar {    background: green;    grid-column: 1/2; } 
+  .review {    background: yellow;    grid-column:2/3; }
+}
