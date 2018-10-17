@@ -6,9 +6,14 @@ self.addEventListener('install', function(event) {
 				return cache.addAll(
 			        [
 			          'index.html',
+			          'images/heriwahyudianto-640.jpg',
+			          'images/heriwahyudianto-320.jpg',
+			          'images/heriwahyudianto-1024.jpg',
 			          'project3/css/mystyle.css',
+			          'project2/css/mystyle.css',
 			          'project3/javascript/bundle.js',
-			          'project3/index.html'
+			          'project3/index.html',
+			          'project2/index.html',
 			        ]
 			    );    
 			}

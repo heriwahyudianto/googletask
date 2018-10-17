@@ -2,6 +2,8 @@
 <head> 
 	<meta name="viewport" content="width=device-width, initialscale=1.0, user-scalable=no" /> 
 	<link rel="stylesheet" type="text/css" href="css/mystyle.css"> 
+	<link rel="manifest" href="manifest.json">
+	<meta name="theme-color" content="#4285f4">
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
    integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
    crossorigin=""/>
@@ -9,12 +11,27 @@
    integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
    crossorigin="" ></script>
 </head>
-<body>    
+<body>   
+	<noscript>Please Activate Javascript</noscript> 
 	 <div class='container'>
         <div class='peta' id='mapid'> </div>         
         <div class='gambar'></div>        
         <div class='review'></div>        
     </div> 
+    <script>
+    if ('serviceWorker' in navigator) {
+        console.log("Will service worker register?");
+        window.addEventListener('load', function() {
+            navigator.serviceWorker.register('../service-worker.js').then(function(registration) {
+              // Registration was successful
+              console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            }, function(err) {
+              // registration failed :(
+              console.log('ServiceWorker registration failed: ', err);
+            });
+        });
+    }
+    </script>
 <script type="text/javascript" charset="utf-8" async defer>
 	var mymap = L.map('mapid').setView([-8.701660,115.169856], 13);
     L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
