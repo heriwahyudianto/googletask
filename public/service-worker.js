@@ -5,9 +5,10 @@ self.addEventListener('install', function(event) {
 			function(cache) {          
 				return cache.addAll(
 			        [
-			          'css/mystyle.css',
-			          'javascript/bundle.js',
-			          'index.html'
+			          'index.html',
+			          'project3/css/mystyle.css',
+			          'project3/javascript/bundle.js',
+			          'project3/index.html'
 			        ]
 			    );    
 			}
