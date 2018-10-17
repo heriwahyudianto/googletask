@@ -3,7 +3,7 @@
   "name": "MapBox",
   "icons": [
     {
-      "src":"images/grid_192x192.png",
+      "src":"images/map_192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
